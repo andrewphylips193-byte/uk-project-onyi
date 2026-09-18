@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Card */
+.main-container {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Product Image */
+.main-container img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.main-container h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.main-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Current Price */
+.main-container p:nth-of-type(2) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Old Price */
+.main-container del {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Add to Cart Button */
+.main-container > button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #27ae60;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.main-container > button:hover {
+    background: #219150;
+}
+
+/* Social Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-container button:hover {
+    background: #555;
+}
